@@ -1,0 +1,10 @@
+name: sched
+
+on:
+  schedule:
+    - cron: '0 */2 * * *'
+
+jobs:
+  run:
+    uses: ./.github/workflows/test.yaml
+    secrets: inherit
